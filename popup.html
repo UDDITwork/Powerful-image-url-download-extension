@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Tab Downloader</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+      min-width: 300px;
+      min-height: 400px;
+    }
+
+    h3 {
+      margin: 10px 0;
+      padding: 10px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 1.5em;
+      color: #ff6b6b;
+    }
+
+    #image-list {
+      margin: 20px auto;
+      max-height: 200px;
+      overflow-y: auto;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #image-list p {
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 5px;
+      background: #fff;
+      color: #555;
+      font-size: 0.9em;
+      word-break: break-all;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      color: #fff;
+      background: #ff6b6b;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff9a9e;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <h3>Active Image URLs</h3>
+  <div id="image-list"></div>
+  <button id="download">Download All</button>
+  <script src="popup.js"></script>
+</body>
+</html>
